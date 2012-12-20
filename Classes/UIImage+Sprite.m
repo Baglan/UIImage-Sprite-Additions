@@ -42,8 +42,10 @@
     CGImageRef spriteSheet = [image CGImage];
     NSMutableArray *tempArray = [[NSMutableArray alloc] init];
     
-    int width = CGImageGetWidth(spriteSheet);
-    int height = CGImageGetHeight(spriteSheet);
+    CGFloat scale = image.scale;
+    
+    int width = CGImageGetWidth(spriteSheet) / scale;
+    int height = CGImageGetHeight(spriteSheet) / scale;
     
     int maxI = width / size.width;
     
@@ -83,8 +85,8 @@
         
         while (positionX < width) {
             
-            CGImageRef sprite = CGImageCreateWithImageInRect(spriteSheet, CGRectMake(positionX, positionY, size.width, size.height));
-            [tempArray addObject:[UIImage imageWithCGImage:sprite]];
+            CGImageRef sprite = CGImageCreateWithImageInRect(spriteSheet, CGRectMake(positionX * scale, positionY * scale, size.width * scale, size.height * scale));
+            [tempArray addObject:[UIImage imageWithCGImage:sprite scale:scale orientation:UIImageOrientationUp]];
             
             CGImageRelease(sprite);
             
