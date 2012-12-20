@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		869723C7168305E400F4E0F9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 869723C6168305E400F4E0F9 /* Default-568h@2x.png */; };
 		AF044E2414758C5000B2C688 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF044E2314758C5000B2C688 /* UIKit.framework */; };
 		AF044E2614758C5000B2C688 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF044E2514758C5000B2C688 /* Foundation.framework */; };
 		AF044E2814758C5000B2C688 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF044E2714758C5000B2C688 /* CoreGraphics.framework */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		869723C6168305E400F4E0F9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		AF044E1F14758C5000B2C688 /* SpriteAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF044E2314758C5000B2C688 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AF044E2514758C5000B2C688 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,6 +59,7 @@
 		AF044E1414758C5000B2C688 = {
 			isa = PBXGroup;
 			children = (
+				869723C6168305E400F4E0F9 /* Default-568h@2x.png */,
 				AF044E2914758C5000B2C688 /* SpriteAnimationDemo */,
 				AF044E2214758C5000B2C688 /* Frameworks */,
 				AF044E2014758C5000B2C688 /* Products */,
@@ -171,6 +174,7 @@
 				AF044E3D14758C5000B2C688 /* MasterViewController.xib in Resources */,
 				AF044E4E1475951100B2C688 /* explosion_4_39_128.png in Resources */,
 				AF044E541476E9C400B2C688 /* explosion_4_39_128_debug.png in Resources */,
+				869723C7168305E400F4E0F9 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +260,7 @@
 		AF044E4414758C5000B2C688 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpriteAnimationDemo/SpriteAnimationDemo-Prefix.pch";
 				INFOPLIST_FILE = "SpriteAnimationDemo/SpriteAnimationDemo-Info.plist";
@@ -267,6 +272,7 @@
 		AF044E4514758C5000B2C688 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpriteAnimationDemo/SpriteAnimationDemo-Prefix.pch";
 				INFOPLIST_FILE = "SpriteAnimationDemo/SpriteAnimationDemo-Info.plist";
