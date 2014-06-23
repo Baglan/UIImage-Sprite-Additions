@@ -49,11 +49,11 @@
     
     int maxI = width / size.width;
     
-    int startI = 0;
+    NSUInteger startI = 0;
     int startJ = 0;
     int length = 0;
     
-    int startPosition = range.location;
+    NSUInteger startPosition = range.location;
     
     // Extracting initial I & J values from range info
     //
